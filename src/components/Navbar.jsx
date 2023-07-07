@@ -10,7 +10,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-8 items-center cursor-pointer">
           <Link
-            to="/home"
+            to="/"
             className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14"
           >
             Home
