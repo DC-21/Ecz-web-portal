@@ -24,7 +24,7 @@ const Navbar = () => {
           <a>News</a>
           <a>About</a>
         </div>
-        <div>Log In</div>
+        <div className="px-3 py-2 bg-[#77aa77] text-white rounded">Log In</div>
       </div>
     </div>
   );
