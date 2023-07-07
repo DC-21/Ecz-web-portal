@@ -8,7 +8,7 @@ const Navbar = () => {
           <a>ECZ</a>
         </div>
         <div className="flex gap-8 items-center cursor-pointer">
-          <a className="hover:px-1 py-2 hover:bg-[#77aa77] text-white rounded inline-block w-14">
+          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">
             Home
           </a>
           <a className="inline-block">
@@ -23,9 +23,8 @@ const Navbar = () => {
               <option value="school5">University</option>
             </select>
           </a>
-
-          <a>News</a>
-          <a>About</a>
+          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">News</a>
+          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">About</a>
         </div>
         <div className="px-3 py-2 bg-[#77aa77] text-white rounded">Log In</div>
       </div>
