@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-full pt-6'>
-        <div className='w-full h-screen bg-[#00a536] px-8'></div>
+    <div className='w-full px-4 h-auto'>
+        <div className='w-full h-screen bg-[#c4dfc4] px-8 mt-1 rounded'></div>
     </div>
   )
 }
