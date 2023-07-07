@@ -2,25 +2,27 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="h-screen w-full">
-      <div>
-        <a className="inline-block">
-          <select
-            id="school-select"
-            className="text-center block w-24 h-10 px-4 py-2 bg-[#00a536] appearance-none cursor-pointer hover:bg-[#77aa77] text-white rounded"
-          >
-            <option value="">Schools</option>
-            <option value="school2">Primary</option>
-            <option value="school3">Secondary</option>
-            <option value="school4">College</option>
-            <option value="school5">University</option>
-          </select>
-        </a>
+    <div className="flex flex-col h-screen justify-center items-center">
+        <div>
+        div className="text-center pb-6 border border-slate-400">
+        <label htmlFor="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          className="block w-64 px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Username"
+        />
       </div>
-      <div>
-        <label>Username</label>
-        <input />
+      <div className="text-center pt-4">
+        <label htmlFor="username">Password</label>
+        <input
+          type="text"
+          id="username"
+          className="block w-64 px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          placeholder="Password"
+        />
       </div>
+        </div>
     </div>
   );
 };
