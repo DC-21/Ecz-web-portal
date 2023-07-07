@@ -4,14 +4,14 @@ import ecz from "../images/ecz.jpg";
 const News = () => {
   return (
     <div className="px-4 w-full flex h-auto">
-      <div className="w-full px-8 mt-1 mb-4 rounded h-auto flex flex-col bg-[#c4dfc4] justify-center items-center">
+      <div className="w-full px-8 mt-1 mb-4 rounded h-screen flex flex-col bg-[#c4dfc4] justify-center items-center">
         <h1 className="text-3xl underline text-black">Latest ECZ News</h1>
         <div className="w-full justify-center items-center pt-6">
           <h2 className="pt-8 text-2xl text-center flex">
             More female candidates have registered for 2023 exams compared to
             males – ECZ
           </h2>
-          <div className="md:flex flex-col w-full">
+          <div className="flex w-full">
             <div className="w-1/2 pt-4 flex">
               <p className="text-left px-4 pt-10">
                 THE Examinations Council of Zambia (ECZ) has disclosed that more
