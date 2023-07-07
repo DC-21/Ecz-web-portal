@@ -3,8 +3,8 @@ import React from "react";
 const Login = () => {
   return (
     <div className="flex flex-col h-screen justify-center items-center">
+                <h1 className="text-xl text-center pb-4">Login</h1>
       <div className="border border-green-400 py-14 px-10 rounded">
-        <h1 className="text-center pb-4">Login</h1>
         <div className="text-center pb-10 pt-4">
           <label htmlFor="username">Username</label>
           <input
