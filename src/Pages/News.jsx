@@ -13,10 +13,11 @@ const News = () => {
           </h2>
           <div className="flex flex-wrap w-full">
             <div className="w-1/2 pt-4 flex">
-              <p>
+              <p className="text-left px-4 pt-10">
                 THE Examinations Council of Zambia (ECZ) has disclosed that more
                 female candidates have registered for the 2023 examinations
-                compared to male candidates. And Chilala says 24 names of
+                compared to male candidates.<br/>
+                Chilala says 24 names of
                 teachers who were suspected to have been involved in examination
                 malpractice during the 2022 GCE and Grade 9 External
                 examinations have been submitted to the Ministry of Education
@@ -30,7 +31,7 @@ const News = () => {
               </p>
             </div>
             <div className="w-1/2 pt-4 flex">
-              <img src={ecz} alt="" />
+              <img src={ecz} alt="" className="rounded"/>
             </div>
           </div>
         </div>
