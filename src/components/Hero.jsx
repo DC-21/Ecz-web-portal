@@ -20,7 +20,9 @@ const Hero = () => {
             Log in with your school credentials in order to check out the results
           </h1>
           <div className="pt-5">
-            <button className="px-3 py-2 bg-[#00a758] text-white rounded hover:bg-[#00a536]">Log In</button>
+            <Link
+            to="/login"
+            className="px-3 py-2 bg-[#00a758] text-white rounded hover:bg-[#00a536]">Log In</Link>
           </div>
         </div>
       </div>

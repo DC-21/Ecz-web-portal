@@ -40,7 +40,11 @@ const Navbar = () => {
             About
           </Link>
         </div>
-        <div className="px-3 py-2 bg-[#77aa77] text-white rounded">Log In</div>
+        <Link
+        to="/login"
+         className="px-3 py-2 bg-[#77aa77] text-white rounded">
+            Log In
+        </Link>
       </div>
     </div>
   );
