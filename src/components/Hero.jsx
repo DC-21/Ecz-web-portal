@@ -1,5 +1,5 @@
 import React from "react";
-import eczhero from "../images/eczhero.png";
+import eczhero from "../images/hero.png";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="w-full px-8 mt-1 rounded h-screen flex bg-[#c4dfc4] justify-center items-center">
         <div className="text-center">
           <h1>Welcome to the Examinations Council Of Zambia.</h1>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ display: "flex", justifyContent: "center"}}>
             <img
               src={eczhero}
               alt="ecz"
