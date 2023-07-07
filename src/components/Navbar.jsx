@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="px-4 py-3 w-full sticky top-0">
       <div className="items-center w-full rounded flex py-6 px-8 bg-[#00a536] text-white justify-between shadow shadow-black">
         <div className="flex">
-          <a>ECZ</a>
+          <Link to="/">ECZ</Link>
         </div>
         <div className="flex gap-8 items-center cursor-pointer">
-          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">
+          <Link
+            to="/home"
+            className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14"
+          >
             Home
-          </a>
+          </Link>
           <a className="inline-block">
             <select
               id="school-select"
@@ -23,8 +27,18 @@ const Navbar = () => {
               <option value="school5">University</option>
             </select>
           </a>
-          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">News</a>
-          <a className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14">About</a>
+          <Link
+            to="/news"
+            className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14"
+          >
+            News
+          </Link>
+          <Link
+            to="/about"
+            className="hover:py-2 text-center hover:bg-[#77aa77] text-white rounded inline-block w-14"
+          >
+            About
+          </Link>
         </div>
         <div className="px-3 py-2 bg-[#77aa77] text-white rounded">Log In</div>
       </div>
