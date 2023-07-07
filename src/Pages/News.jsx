@@ -5,12 +5,13 @@ const News = () => {
     <div className="px-4 w-full">
       <div className="w-full px-8 mt-1 mb-4 rounded h-screen flex flex-col bg-[#c4dfc4] justify-center items-center">
         <h1 className="text-3xl underline text-black">Latest ECZ News</h1>
-        <div className="flex flex-wrap w-full">
-        <div>
+        <div className="w-full">
         <h2 className="pt-8 text-2xl flex">
           More female candidates have registered for 2023 exams compared to
           males – ECZ
         </h2>
+        <div className="flex flex-wrap w-full">
+        <div className="w-1/2">
           <p>
             THE Examinations Council of Zambia (ECZ) has disclosed that more
             female candidates have registered for the 2023 examinations compared
@@ -26,6 +27,7 @@ const News = () => {
             and 84,085 Grade 12 female candidates registered for the
             examinations…....{" "}
           </p>
+        </div>
         </div>
         </div>
       </div>
