@@ -1,30 +1,58 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from 'axios';
 
 const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post('http://localhost:3000/login', { email, password });
+      // Handle successful login
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setPassword(event.target.value);
+  };
+
   return (
     <div className="flex flex-col h-screen justify-center items-center">
-                <h1 className="text-xl text-center pb-4">Login Please</h1>
+      <h1 className="text-xl text-center pb-4">Login Please</h1>
       <div className="border border-green-400 py-14 px-10 rounded">
         <div className="text-center pb-10 pt-4">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="email">Email</label>
           <input
             type="text"
-            id="username"
+            id="email"
             className="block w-64 px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-            placeholder="Username"
+            placeholder="Email"
+            value={email}
+            onChange={handleEmailChange}
           />
         </div>
         <div className="text-center pt-0">
-          <label htmlFor="username">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             id="password"
             className="block w-64 px-4 py-2 mt-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
             placeholder="Password"
+            value={password}
+            onChange={handlePasswordChange}
           />
         </div>
         <div className="text-center pt-6">
-            <button className="px-10 py-3 bg-[#00a536] rounded mt-8">Login</button>
+          <button className="px-10 py-3 bg-[#00a536] rounded mt-8" onClick={handleLogin}>
+            Login
+          </button>
         </div>
       </div>
     </div>
