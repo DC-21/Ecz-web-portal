@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from 'axios';
 
 const Login = () => {
@@ -12,6 +12,8 @@ const Login = () => {
       // Handle successful login
       console.log(response.data);
       setLoginMessage('Successful login!');
+      // Redirect to home page
+      window.location.href = '/';
     } catch (error) {
       console.error(error);
       setLoginMessage('Login failed. Please try again.');
@@ -25,18 +27,6 @@ const Login = () => {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
-
-  useEffect(() => {
-    let timeoutId;
-
-    if (loginMessage) {
-      timeoutId = setTimeout(() => {
-        setLoginMessage('');
-      }, 5000);
-    }
-
-    return () => clearTimeout(timeoutId);
-  }, [loginMessage]);
 
   return (
     <div className="flex flex-col h-screen justify-center items-center">
