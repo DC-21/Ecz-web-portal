@@ -3,7 +3,7 @@ import ecz from "../images/ecz.jpg";
 
 const News = () => {
   return (
-    <div className="px-4 w-full flex h-auto flex">
+    <div className="px-4 w-full flex h-auto">
       <div className="w-full px-8 mt-1 mb-4 rounded h-screen flex flex-col bg-[#c4dfc4] justify-center items-center">
         <h1 className="text-3xl underline text-black">Latest ECZ News</h1>
         <div className="w-full justify-center items-center pt-6">
